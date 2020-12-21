@@ -1,0 +1,12 @@
+.is-rounded {
+    border-radius: 5px;
+    padding: 3px;
+}
+
+@font-face {
+    font-family: "monta";
+    src: url("../monta-icons/fonts/Monta-Iconpack-V2019.ttf");
+    src: url("../monta-icons/fonts/Monta-Iconpack-V2019.woff");
+    src: url("../monta-icons/fonts/Monta-Iconpack-V2019.eot");
+    src: url("../monta-icons/fonts/Monta-Iconpack-V2019.svg");
+    }
