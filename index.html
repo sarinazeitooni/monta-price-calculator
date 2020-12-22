@@ -4,26 +4,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>monta web page</title>
+    <title>monta discount page</title>
     <link rel="stylesheet" href="css/montav2.css">
     <link rel="stylesheet" href="css/monta.css">
     <link rel="stylesheet" href="/css/main.css">
 </head>
 
 <body>
-    <!-- <div class="m--main-panel">
-        <div class="m--control-container container is-fullhd space-14-mobile-n  is-paddingless-bottom">
-            <div class="columns m--main-contents"> -->
+  
     <div class="container is-size-2-mobile space-12-horizontal-mobile-n space-24-top-n space-32-top-mobile-n ">
         <div class=" home-header space-24-n">
             <div class="columns space-12-n">
+                
+            </div><div class="columns space-12-n">
                 <div class="column is-2"><img src="images/download.jfif" alt="book"></div>
 
-                <div class="column is-8 space-12-top-n">
-
-                    <span class="text-size-24-n space-16-bottom-n">ادبیات فارسی اختصاصی 3</span>
-
-                    <div class="is-flex space-12-top-n ">
+                <div class="column is-8 ">
+                    <span class="text-size-24-n column has-text-justified ">ادبیات فارسی اختصاصی 3</span>
+                    <div class="is-flex  is-hidden-mobile">
                         <span
                             class="orange-color space-4-n ">دبیرستان</span>
                         <span
@@ -34,41 +32,42 @@
                     </div>
 
                     <div class="columns">
-                        <div class="column is-6 "><b class=" is-flex space-12-top-n">اشتراک ویژه دانش آموزان</b>
-                        </div>
-                        <div class="column"><b class=" is-flex space-12-top-n">اشتراک ویژه مدارس</b></div>
-                    </div>
-
-                    <div class="columns is-flex space-4-top-n">
-                        <div class="column is-6">
-                            <button id="btn1" data-clicked="0" data-price="25000" onclick="discount(1) "
-                                class="button is-2 active"><span id="spn1" class="mi-mark-1"> </span> &nbsp; 1 ماه
+                        <div class="column">
+                            <b class=" is-size-4-mobile">اشتراک ویژه دانش آموزان</b>
+                            <div class="column">
+                                <button id="btn1" data-clicked="0" data-price="25000" onclick="discount(1) "
+                                class="button is-2 "><span id="spn1" class="mi-mark-1"> </span> &nbsp; 1 ماه
                             </button>
-
+    
                             <button id="btn2" data-clicked="0" data-price="50000" onclick="discount(2) "
-                                class="button is-2 active"><span id="spn2" class=""> </span> &nbsp; 3 ماه </button>
-
+                                class="button is-2 "><span id="spn2" class=""> </span> &nbsp; 3 ماه </button>
+    
                             <button id="btn3" data-clicked="0" data-price="75000" onclick="discount(3) "
-                                class="button is-2 active"><span id="spn3" class=""> </span> &nbsp; 6 ماه </button>
-
+                                class="button is-2 "><span id="spn3" class=""> </span> &nbsp; 6 ماه </button>
+    
                             <button id="btn4" data-clicked="0" data-price="100000" onclick="discount(4) "
-                                class="button is-2 active"><span id="spn4" class=""> </span> &nbsp; 9 ماه </button>
+                                class="button is-2 "><span id="spn4" class=""> </span> &nbsp; 9 ماه </button>
+                            </div>
+                        
                         </div>
-
-                        <div class="column is-6"><button id="btn5" data-clicked="0" data-price="125000"
-                                onclick="discount(5) " class=" button is-2 active"><span id="spn5" class=""> </span>
-                                &nbsp; 12
-                                ماه </button>
+                        <div class="column ">
+                            <b class="is-size-4-mobile">اشتراک ویژه مدارس</b>
+                        <div class="column">
+                            <button id="btn5" data-clicked="0" data-price="125000"
+                            onclick="discount(5)"class="button is-2"><span id="spn5" class=""></span>
+                            &nbsp; 12 ماه </button>
+                        </div>
                         </div>
                     </div>
+    
                     <div class="columns">
-                        <div class="column is-8">
-                            <p>قیمت کل:<span id="fullprice"></span> تومان<span class="text-size-8-n">(حق
+                        <div class="column is-8 has-text-centered-mobile">
+                            <p class="">قیمت کل:<span id="fullprice"></span> تومان <span class="is-block-mobile text-size-8-n">(حق
                                     اشتراک:<span id="percent70"></span> + شارژ دریافتی:
                                     <span id="percent30"></span>)</span> </p>
                         </div>
 
-                        <div class="column level">
+                        <div class="column level is-hidden-mobile">
                             <div class="button level-item is-main is-rounded">
                                 افزودن به سبد خرید
                             </div>
@@ -79,8 +78,8 @@
         </div>
 
         <div class="home-header">
-            <span class="">در این کتاب چه خواهید دید؟</span>
-            <div class="columns">
+            <span class="is-size-4-mobile">در این کتاب چه خواهید دید؟</span>
+            <div class="columns has-text-left-mobile is-size-5-mobile">
                 <div class="column "> <span class="mi-Exam-4 text-size-24-n"> </span> &nbsp; 3 سوال <p
                         class="text-size-8-n">تعداد سوال تستی </p>
                 </div>
