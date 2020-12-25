@@ -10,66 +10,92 @@
     <link rel="stylesheet" href="/css/main.css">
 </head>
 
-<body>
-    
+<body onload="initialData()">
+
     <div class="container is-size-4-mobile space-12-horizontal-mobile-n space-24-top-n space-32-top-mobile-n ">
         <div class=" home-header space-24-n">
-            <div class="columns space-12-n">
-                
-            </div><div class="columns space-12-n">
-                <div class="column has-centered-children is-2"><img src="images/download.jfif" alt="book"></div>
+            <div class="columns space-12-n space-top">
+                <span class="is-hidden-widescreen-only text-weight-bold-n text-dark-n text-h1 column  has-text-justified ">
+                    ادبیات فارسی
+                        اختصاصی 3</span>
+                <div class="column is-rounded has-centered-children is-2">
+                    <img class="is-rounded" src="images/book.jpeg"
+                        alt="book"></div>
 
-                <div class="column is-8 ">
-                    <span class="text-size-24-n column has-text-justified ">ادبیات فارسی اختصاصی 3</span>
-                    <div class="is-flex  is-hidden-mobile">
-                        <span
-                            class="orange-color space-4-n ">دبیرستان</span>
-                        <span
-                            class="orange-color space-4-n ">چهارم</span>
-                        <span
-                            class="orange-color space-4-n ">انسانی(نظام
+                <div class="column is-10 ">
+                    <div class="columns"> <span class=" is-hidden-mobile text-weight-bold-n text-dark-n text-h1 column  has-text-justified ">
+                        ادبیات فارسی
+                            اختصاصی 3</span>
+                        <div class=" is-flex ">
+                            
+                           <div class="is-flex">
+                            <span class="mi-like-16 padding-3-n text-grey-n "></span>
+                            <span>2</span>
+                           </div><div class="is-flex"> <span class="mi-Eye padding-3-n text-grey-n"></span>
+                            <span>213</span>
+                        </div><span class=" padding-3-n text-grey-n mi-share-24px"></span>
+                        </div>
+                        
+                    </div>
+
+                    <div class="is-flex is-hidden-mobile">
+                        <span class="orange-color space-4-n ">دبیرستان</span>
+                        <span class="orange-color space-4-n ">چهارم</span>
+                        <span class="orange-color space-4-n ">انسانی(نظام
                             قدیم)</span>
                     </div>
 
-                    <div class="columns">
-                        <div class="column">
-                            <b class=" is-size-4-mobile">اشتراک ویژه دانش آموزان</b>
+                    <div class="columns padding-top">
+                        <div class="column is-7">
+
+                            <b class="  padding-3-n text-size-14-mobile-n">اشتراک ویژه دانش آموزان</b><span
+                                class="mi-Info"></span>
                             <div class="column">
-                                <button id="btn1" data-clicked="0" data-price="25000" onclick="discount(1) "
-                                class="button is-2 "><span id="spn1" class="mi-mark-1"> </span> &nbsp; 1 ماه
-                            </button>
-    
-                            <button id="btn2" data-clicked="0" data-price="50000" onclick="discount(2) "
-                                class="button is-2 "><span id="spn2" class=""> </span> &nbsp; 3 ماه </button>
-    
-                            <button id="btn3" data-clicked="0" data-price="75000" onclick="discount(3) "
-                                class="button is-2 "><span id="spn3" class=""> </span> &nbsp; 6 ماه </button>
-    
-                            <button id="btn4" data-clicked="0" data-price="100000" onclick="discount(4) "
-                                class="button is-2 "><span id="spn4" class=""> </span> &nbsp; 9 ماه </button>
+                                <button id="btn1" style="border: 1px #3fd200bb solid;" data-price="25000"
+                                    onclick="discount(30,70,1) " class="button is-2 "><span id="spn1" class="mi-Mark-2">
+                                    </span> &nbsp; 1 ماه
+                                </button>
+
+                                <button id="btn2" data-price="50000" onclick="discount(30,70,2) " class="button is-2 "><span
+                                        id="spn2" class=""> </span> &nbsp; 3 ماه </button>
+
+                                <button id="btn3" data-price="75000" onclick="discount(30,70,3) " class="button is-2 "><span
+                                        id="spn3" class=""> </span> &nbsp; 6 ماه </button>
+
+                                <button id="btn4" data-price="100000" onclick="discount(30,70,4) " class="button is-2 "><span
+                                        id="spn4" class=""> </span> &nbsp; 9 ماه </button>
+
+                                <button id="btn5" data-price="125000" onclick="discount(30,70,5)" class="button is-2"><span
+                                        id="spn5"></span>
+                                    &nbsp; 12 ماه </button>
                             </div>
-                        
+
                         </div>
                         <div class="column ">
-                            <b class="is-size-4-mobile">اشتراک ویژه مدارس</b>
-                        <div class="column">
-                            <button id="btn5" data-clicked="0" data-price="125000"
-                            onclick="discount(5)"class="button is-2"><span id="spn5" class=""></span>
-                            &nbsp; 12 ماه </button>
-                        </div>
+                            <b class=" text-size-14-mobile-n">اشتراک ویژه مدارس</b><span class="mi-Info"></span>
+                            <div class="column">
+                                <button id="btn6" data-price="125000" onclick="discount(30,70,6)"
+                                    class="button has-text-centered is-3-mobile  is-2"><span id="spn6" class=""> </span>
+                                    &nbsp; 12 ماه </button>
+                            </div>
                         </div>
                     </div>
-    
+
                     <div class="columns">
-                        <div class="column is-8 has-text-centered-mobile">
-                            <p class="">قیمت کل:<span id="fullprice"></span> تومان <span class="is-block-mobile text-size-8-n">(حق
+                        <div class="column is-7 has-text-centered-mobile">
+                            <p class="">قیمت کل:<span id="fullprice"></span> تومان <span
+                                    class="is-block-mobile text-size-8-n">(حق
                                     اشتراک:<span id="percent70"></span> + شارژ دریافتی:
                                     <span id="percent30"></span>)</span> </p>
                         </div>
 
-                        <div class="column level is-hidden-mobile">
-                            <div class="button level-item is-main is-rounded">
+                        <div class="column is-hidden-mobile">
+
+                            <div class="button  is-main is-rounded">
+                                <span class="mi-shop-white "></span>
+                                &nbsp;
                                 افزودن به سبد خرید
+
                             </div>
                         </div>
                     </div>
@@ -80,21 +106,51 @@
         <div class="home-header">
             <span class="is-size-4-mobile">در این کتاب چه خواهید دید؟</span>
             <div class="columns has-text-left-mobile is-size-5-mobile">
-                <div class="column "> <span class="mi-Exam-4 text-size-24-n"> </span> &nbsp; 3 سوال <p
-                        class="text-size-8-n">تعداد سوال تستی </p>
+                <div class="column is-flex">
+                    <img class="is-inline-block image is-32x32" src="images/WhatsApp Image 2020-12-23 at 02.50.42.jpeg">
+                    </img>
+                    <div>
+                        <p class=" is-inline text-size-12-n"> 3 سوال</p>
+                        <p class=" text-size-8-n">
+                            تعداد سوال تستی</p>
+
+                    </div>
                 </div>
-                <div class="column"> <span class="mi-Exam text-size-24-n"> </span> &nbsp; 72 سوال <p
-                        class="text-size-8-n">تعداد سوال تشریحی </p>
+                <div class="line is-hidden-mobile space-12-top-n space-32-left-n"></div>
+
+                <div class="column is-flex"> <img class="image is-32x32"
+                        src="images/WhatsApp Image 2020-12-23 at 02.50.42 (1).jpeg">
+                    </img>
+                    <div>
+                    <p class=" is-inline text-size-12-n"> 72 سوال</p>
+                    <p class=" text-size-8-n">
+                        تعداد سوال تشریحی</p>
+                    </div>
                 </div>
-                <div class="column"> <span class="mi-Videos text-size-24-n"> </span> &nbsp; 0 سوال <p
-                        class="text-size-8-n">تعداد سوال های ویدیودار</p>
+                <div class="line is-hidden-mobile space-12-top-n space-32-left-n"></div>
+
+                <div class="column is-flex"> <img class="image is-32x32"
+                        src="images/WhatsApp Image 2020-12-23 at 02.50.43.jpeg"> </img>
+                        <div>
+                    <p class=" is-inline text-size-12-n"> 0 سوال</p>
+                    <p class=" text-size-8-n">
+                        تعداد سوال های ویدیودار</p>
+                    </div>
                 </div>
-                <div class="column"> <span class="mi-Lessons text-size-24-n"> </span> &nbsp; 0 درسنامه <p
-                        class="text-size-8-n">تعداد درسنامه ها</p>
+                <div class="line is-hidden-mobile space-32-left-n space-12-top-n"></div>
+
+                <div class="column is-flex">
+                    <img class="image is-32x32" src="images/WhatsApp Image 2020-12-23 at 02.50.43 (1).jpeg"></img>
+                 <div> 
+                    <p class=" is-inline text-size-12-n"> 0 درسنامه</p>
+                    <p class=" text-size-8-n">
+                        تعداد درسنامه</p>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
+
 
     <script src="js/main.js">
     </script>
