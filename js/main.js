@@ -11,7 +11,7 @@ function initialData(){
     percent30.innerHTML="7500";
 }
 
-function discount(firstDiscount,secondDiscount,ID) {
+function discount(Discount=70,ID) {
     let button = document.getElementById("btn" + ID);
     let ico = document.getElementById("spn" + ID);
     price = button.getAttribute('data-price');
@@ -19,12 +19,12 @@ function discount(firstDiscount,secondDiscount,ID) {
        let percent7 = price - ((price*7)/100);
         price = percent7;
     }
-    firstPrice = (price * firstDiscount) / 100;
-    secondPrice = (price * secondDiscount) / 100;
+    firstPrice = (price * Discount) / 100;
+    secondPrice = price - firstPrice;
     
     item = {
-        Percent70: secondPrice,
-        Percent30: firstPrice
+        Percent70: firstPrice,
+        Percent30: secondPrice
     };
     
     fullPrice.innerHTML = price;
