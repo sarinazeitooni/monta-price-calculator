@@ -1,0 +1,94 @@
+//color variables
+
+$mainBlue: rgb(76, 198, 247);
+$mainGreen : #40D200;
+$orangeColor : #ffc116;
+$orangeBackColor : #f8da8717;
+$grayLineColor : #00000025;
+
+//fonts
+
+@font-face {
+    font-family: "monta";
+    src: url("../monta-icons/fonts/Monta-Iconpack-V2019.ttf");
+    src: url("../monta-icons/fonts/Monta-Iconpack-V2019.woff");
+    src: url("../monta-icons/fonts/Monta-Iconpack-V2019.eot");
+    src: url("../monta-icons/fonts/Monta-Iconpack-V2019.svg");
+    }
+
+//styling
+
+.orange-color{
+    color: $orangeColor;
+    background-color: $orangeBackColor;
+}
+.mi-Info{
+    color:$mainBlue;
+}
+.line{
+    background-color: $grayLineColor;
+    height: 50px;
+    width: 0;
+    padding: 1px;
+}
+.mi-shop-dark,.mi-Mark-2{
+    color: $mainGreen;
+}
+.is-rounded{
+    border-radius: 10px;
+}
+.button.is-3-mobile{
+    justify-content: center;
+}   
+.mobileResponsive{
+    font-size: 1.5rem !important;
+    margin: 0 12px !important;
+    margin-top: 24px;
+    margin-top: 32px !important;
+}
+.Title{
+    color:#212121;
+    font-weight: 700;
+    @media screen and (min-width: 1216px) and (max-width: 1407px) {
+          display: none !important; } 
+}
+.Buttons:active , .Buttons:focus{
+        border: 1px $mainGreen solid;  
+}
+.Buttons{
+    margin: 0 4px;
+    min-width: 6rem;
+  max-width: 6rem;
+  overflow: hidden;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  align-items: center;
+  border: 1px solid transparent;
+  border-radius: 7px;
+  box-shadow: none;
+  display: inline-flex;
+  font-size: 1rem;
+  height: 2.25em;
+  justify-content: flex-start;
+  line-height: 1.5;
+  padding-bottom: calc(0.375em - 1px);
+  padding-right: calc(0.625em - 1px);
+  padding-left: calc(0.625em - 1px);
+  padding-top: calc(0.375em - 1px);
+  position: relative;
+  vertical-align: top;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-color: white;
+  border-color: #dbdbdb;
+  color: #363636;
+  cursor: pointer;
+  justify-content: center;
+  padding-right: 0.75em;
+  padding-left: 0.75em;
+  text-align: center;
+  white-space: nowrap; 
+}
