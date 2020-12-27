@@ -10,12 +10,12 @@
     <link rel="stylesheet" href="/css/main.css">
 </head>
 
-<body onload="initialData()">
+<body onload="myFunction()">
 
-    <div class="container is-size-4-mobile space-12-horizontal-mobile-n space-24-top-n space-32-top-mobile-n ">
+    <div class="container">
         <div class=" home-header space-24-n">
             <div class="columns space-12-n space-top">
-                <span class="is-hidden-widescreen-only text-weight-bold-n text-dark-n text-h1 column  has-text-justified ">
+                <span class=" column Title ">
                     ادبیات فارسی
                         اختصاصی 3</span>
                 <div class="column is-rounded has-centered-children is-2">
@@ -23,10 +23,10 @@
                         alt="book"></div>
 
                 <div class="column is-10 ">
-                    <div class="columns"> <span class=" is-hidden-mobile text-weight-bold-n text-dark-n text-h1 column  has-text-justified ">
+                    <div class="columns"> <span class=" is-hidden-mobile text-weight-bold-n text-dark-n text-h1 column   ">
                         ادبیات فارسی
                             اختصاصی 3</span>
-                        <div class=" is-flex ">
+                        <div class="is-flex ">
                             
                            <div class="is-flex">
                             <span class="mi-like-16 padding-3-n text-grey-n "></span>
@@ -39,9 +39,9 @@
                     </div>
 
                     <div class="is-flex is-hidden-mobile">
-                        <span class="orange-color space-4-n ">دبیرستان</span>
-                        <span class="orange-color space-4-n ">چهارم</span>
-                        <span class="orange-color space-4-n ">انسانی(نظام
+                        <span class="orange-color space-4-n padding-3-n">دبیرستان</span>
+                        <span class="orange-color space-4-n padding-3-n">چهارم</span>
+                        <span class="orange-color space-4-n padding-3-n">انسانی(نظام
                             قدیم)</span>
                     </div>
 
@@ -50,43 +50,23 @@
 
                             <b class="  padding-3-n text-size-14-mobile-n">اشتراک ویژه دانش آموزان</b><span
                                 class="mi-Info"></span>
-                            <div class="column">
-                                <button id="btn1" style="border: 1px #3fd200bb solid;" data-price="25000"
-                                    onclick="discount(30,70,1) " class="button is-2 "><span id="spn1" class="mi-Mark-2">
-                                    </span> &nbsp; 1 ماه
-                                </button>
-
-                                <button id="btn2" data-price="50000" onclick="discount(30,70,2) " class="button is-2 "><span
-                                        id="spn2" class=""> </span> &nbsp; 3 ماه </button>
-
-                                <button id="btn3" data-price="75000" onclick="discount(30,70,3) " class="button is-2 "><span
-                                        id="spn3" class=""> </span> &nbsp; 6 ماه </button>
-
-                                <button id="btn4" data-price="100000" onclick="discount(30,70,4) " class="button is-2 "><span
-                                        id="spn4" class=""> </span> &nbsp; 9 ماه </button>
-
-                                <button id="btn5" data-price="125000" onclick="discount(30,70,5)" class="button is-2"><span
-                                        id="spn5"></span>
-                                    &nbsp; 12 ماه </button>
+                            <div class="column" id="mapButtonsContainer">
                             </div>
 
                         </div>
                         <div class="column ">
                             <b class=" text-size-14-mobile-n">اشتراک ویژه مدارس</b><span class="mi-Info"></span>
-                            <div class="column">
-                                <button id="btn6" data-price="125000" onclick="discount(30,70,6)"
-                                    class="button has-text-centered is-3-mobile  is-2"><span id="spn6" class=""> </span>
-                                    &nbsp; 12 ماه </button>
+                            <div class="column" id="mapButtonException">
                             </div>
                         </div>
                     </div>
 
-                    <div class="columns">
-                        <div class="column is-7 has-text-centered-mobile">
+                    <div class="columns ">
+                        <div id="prices" class="column is-7 has-text-centered-mobile">
                             <p class="">قیمت کل:<span id="fullprice"></span> تومان <span
-                                    class="is-block-mobile text-size-8-n">(حق
-                                    اشتراک:<span id="percent70"></span> + شارژ دریافتی:
-                                    <span id="percent30"></span>)</span> </p>
+                                class="is-block-mobile text-size-8-n">(حق
+                                اشتراک:<span id="percent70"></span> + شارژ دریافتی:
+                                <span id="percent30"></span>)</span> </p>
                         </div>
 
                         <div class="column is-hidden-mobile">
